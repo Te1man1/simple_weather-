@@ -17,7 +17,7 @@ function App() {
         >
           Learn React
         </a>
-        <a>erased this crap</a>
+        <a>NOW ILL COMMIT AND ANOTHER COMMIT</a>
       </header>
     </div>
   );
