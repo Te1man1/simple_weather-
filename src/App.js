@@ -47,6 +47,7 @@ class App extends React.Component {
              <div className='TodayWind'>Wind {this.state.windspeed}m/s </div>
              <div className='TodayPressure'>Pressuree {this.state.pressure}hPa</div>
              
+             
            </div>
             <div className='Day2'>
               <p></p>
