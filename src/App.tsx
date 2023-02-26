@@ -1,6 +1,6 @@
 import Form from './form';  
 import React, {useState} from 'react';
-import './App.css';
+import './App.scss';
 import cloudy from "./images/35.svg";
 
 class App extends React.Component {
