@@ -1,13 +1,16 @@
-import Form from './form';
-import cloudy from './images/35.svg';
-import React, { useState, setState } from 'react';
+import Form from './form';  
+import React, {useState} from 'react';
 import './App.css';
+import cloudy from "./images/35.svg";
 
 class App extends React.Component {
   state = {
-    temp: undefined,
     city: undefined,
-    error: undefined
+    temp: undefined,
+    feelslike: undefined,
+    windspeed: undefined,
+    pressure: undefined,
+    error: undefined,
   }
 
   getWeather = async (e) => {
