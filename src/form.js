@@ -1,6 +1,5 @@
 import React from "react";
 import search from './images/search-icon.webp'
-
 import './App.scss';
 
 class Form extends React.Component {
@@ -11,7 +10,6 @@ class Form extends React.Component {
             <input type="text" name='searchcity' placeholder='Search' className='Search-text'>
             </input>
         </form>
-
         );
     }
 }
