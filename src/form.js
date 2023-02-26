@@ -1,7 +1,7 @@
 import React from "react";
 import search from './images/search-icon.webp'
 
-import './App.css';
+import './App.scss';
 
 class Form extends React.Component {
     render(){
