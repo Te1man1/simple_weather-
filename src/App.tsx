@@ -2,6 +2,7 @@ import Form from './form';
 import React, {useState} from 'react';
 import './App.scss';
 import cloudy from "./images/35.svg";
+import { YMaps } from "react-yandex-maps";
 
 class App extends React.Component {
   state = {
@@ -42,7 +43,7 @@ class App extends React.Component {
        <div className="Info">
            <div className="Days">
            <div className='Today'>
-             <div className='TodayCity'>{this.state.city}</div>
+             <div className='City'>{this.state.city}</div>
              <div className='TodayLine'></div>
              <img className='Todayimg' src={cloudy} /> 
              <div className='TodayTemp'>{this.state.temp}°C</div>
@@ -65,7 +66,6 @@ class App extends React.Component {
             </div>
           </div>
           <div className="Map"> 
-           <div className='ymaps-layers-pane' id='Yandex-map'></div>
           </div>
         </div>
         <div className="Widgets">
