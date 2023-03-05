@@ -49,7 +49,7 @@ class App extends React.Component {
              <div className='TodayTemp'>{this.state.temp}°C</div>
              <div className='TodayFeelslike'>Real feel {this.state.feelslike}°</div>
              <div className='TodayWind'>Wind {this.state.windspeed}m/s </div>
-             <div className='TodayPressure'>Pressuree {this.state.pressure}hPa</div>
+             <div className='TodayPressure'>Pressure {this.state.pressure}hPa</div>
              
            </div>
             <div className='Day2'>
