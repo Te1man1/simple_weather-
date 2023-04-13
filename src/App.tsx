@@ -23,9 +23,9 @@ class App extends React.Component {
     console.log(weatherdata);
 
     this.setState({
-      temp: weatherdata.main.temp,
-      feelslike: weatherdata.main.feels_like,
-      windspeed: weatherdata.wind.speed,
+      temp: Math.round(weatherdata.main.temp),
+      feelslike: Math.round(weatherdata.main.feels_like),
+      windspeed: Math.round(weatherdata.wind.speed),
       pressure: weatherdata.main.pressure,
       lon: weatherdata.coord.lon,
       lat: weatherdata.coord.lat,
@@ -44,12 +44,14 @@ class App extends React.Component {
            <div className="Days">
            <div className='Today'>
              <div className='City'>{this.state.city}</div>
-             <div className='TodayLine'></div>
-             <img className='Todayimg' src={cloudy} /> 
-             <div className='TodayTemp'>{this.state.temp}°C</div>
-             <div className='TodayFeelslike'>Real feel {this.state.feelslike}°</div>
-             <div className='TodayWind'>Wind {this.state.windspeed}m/s </div>
-             <div className='TodayPressure'>Pressure {this.state.pressure}hPa</div>
+             <div className='Line'></div>
+             <img className='img' src={cloudy} /> 
+             <div className='Temp'>{this.state.temp}°C</div>
+             <div className='Info'> 
+               <div className='Feelslike'>Real feel {this.state.feelslike}°</div>
+               <div className='Wind'>Wind {this.state.windspeed}m/s </div>
+               <div className='Pressure'>Pressure {this.state.pressure} hPa</div> 
+             </div>
              
            </div>
             <div className='Day2'>

@@ -1,315 +1,303 @@
 .Main {
-  position: absolute;
+  position: relative;
   flex-direction: column;
 
   top: 0;
   left: 0;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  min-width: 100vh;
+  min-height: 100vh;
 
   background: #101014;
-}
 
-.Header {
- display: flex;
- align-self: center;
-
- width: 90%;
- height: 10%;
- margin-top: 50px;
- margin-left: 50px;
- margin-right: auto;
- border-radius: 45px;
- background: linear-gradient(-90deg, #101014 29.95%, #3B3A3E 150.81%);
-
- .Search-img {
-  height: 50%;  
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 20px;
- }
-  .Search-text {
-    width: 20%;
-    font-family: 'Circle';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-    border-radius: 100px;
-    border-style: hidden;
+  .Form{
+    position: relative;
+    display: flex;
+    width: 90%;
+    width: 90%;
+  }
+  
+  .Header {
+    position: relative;
+    display: flex;
     align-self: center;
    
-    color: #FFFFFF;
-    background: none;
-    opacity: 0.9;
- } 
-}
-
-.InfoWidgets {
- display: flex;
- flex-direction: row;
- width: 100%;
- height: 90%;
- margin-top: 50px;
-}
-
-.Info {
- display: flex;
- flex-direction: column;
- align-self: flex-start;
-
- margin-left: 50px;
- width: 70%;
- height: inherit;
-}
-
-.Days {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: flex-start;
-
- height: 40%;
-}
-
-.Today {
- display: flex;
- flex-direction: column;
- width: 30%;
- height: 90%;
- 
- background: radial-gradient(
-     circle at 50% 0,
-     rgba(49,218,255,1),
-     rgba(255, 0, 0, 0) 70.71%
-   ), radial-gradient(
-     circle at 6.7% 75%,
-     rgb(87, 75, 250),
-     rgba(0, 0, 255, 0) 70.71%
-   ),
-   radial-gradient(
-       circle at 93.3% 75%,
-       rgba(197,63,219,1),
-       rgba(0, 255, 0, 0) 70.71%
-     ) beige;
- border-radius: 30px;
-
- .City {
-    position: absolute;
-    object-fit: contain;
+    width: 90%;
+    height: 10%;
+    top: 20px;
+    left: 50px;
+    margin-right: auto;
+    border-radius: 45px;
+    background: linear-gradient(-90deg, #101014 29.95%, #3B3A3E 150.81%);
+   
+    .Search-img {
+    position: relative;
+     height: 1%; 
+     width: 1%; 
+     margin-top: auto;
+     margin-bottom: auto;
+     margin-left: 20px;
+    }
+     .Search-text {
+       width: 20%;
+       font-family: 'Circle';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 24px;
+       line-height: 35px;
+       border-radius: 100px;
+       border-style: hidden;
+       align-self: center;
+      
+       color: #FFFFFF;
+       background: none;
+       opacity: 0.9;
+    } 
+   }
+   
+   .InfoWidgets {
+    position: relative;
     display: flex;
-    margin-left: 10px;
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 3vw;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    min-height: 80vh;
+   }  
+   
+   .Info {
+    position: relative;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 70%;
+    height: 80vh;
+   }
+   
+   .Days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+    height: 40%;
+   }
+   
+   .Today {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    height: 90%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: radial-gradient(
+        circle at 50% 0,
+        rgba(49,218,255,1),
+        rgba(255, 0, 0, 0) 70.71%
+      ), radial-gradient(
+        circle at 6.7% 75%,
+        rgb(87, 75, 250),
+        rgba(0, 0, 255, 0) 70.71%
+      ),
+      radial-gradient(
+          circle at 93.3% 75%,
+          rgba(197,63,219,1),
+          rgba(0, 255, 0, 0) 70.71%
+        ) beige;
+    border-radius: 30px;
+   
+    .City {
+       position: relative;
+       object-fit: contain;
+       left: 15px;
+       font-weight: 400;
+       font-size: 1.5vw;
+       line-height: 3vw;
+       font-family: inherit;
+       color: #FFFFFF;
+    }
+   
+    Line {
+     position: relative;
+     width: 300px;
+     height: 10px;
+     
+     border: 1.5px solid rgba(255, 255, 255, 0.2);
+    }
+   
+    .img {
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     height: 40%;
+     width: 40%;
+    }
+   
+    .Temp {
+     position: relative;
+     top: 0;
+     left: 15px;
+     font-weight: 500;
+     font-size: 4vw;
+     line-height: 5vw;
+     color: #FFFFFF;
+     font-family: inherit;
+    }
+    .Info{
+     width: fit-content;
+     height: fit-content;
+     margin-left: 15px;
+     margin-top: 5%;
+     margin-bottom: 5%;
+     font-weight: 350;
+     font-size: 1.2vw;
+     line-height: 1.5vw;
+     .Feelslike{  
+       color: #FFFFFF;
+      }
+     
+      .Wind {
+       color: #FFFFFF;
+      }
+     
+      .Pressure {
+       color: #FFFFFF;
+      }
+    }
+   }
+   
+   .Day2 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+   
+    width: 11%;
+    height: 90%;
+    left: auto;
+    right: auto;
+   
+    background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+    border-radius: 30px;
+   }
+   
+   .Day3 {
+    display: flex;
     
-    color: #FFFFFF;
- }
+    flex-direction: column;
+    height: fit-content;
+   
+    left: auto;
+    right: auto;
+    width: 11%;
+    height: 90%;
+   
+   
+    background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+    border-radius: 30px;
+   }
+   
+   .Day4 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 11%;
+    height: 90%;
+   
+    background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+    border-radius: 30px;
+   }
+   
+   .Day5 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+   
+    left: auto;
+    right: auto;
+    width: 11%;
+    height: 90%;
+   
+    background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+    border-radius: 30px;
+   }
+   
+   .Map {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    top: 30px;  
+    border-radius: 45px;
+    background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+   }
+   
+   .ymaps-layers-pane {
+    filter: invert(100%);
+    -ms-filter: invert(100%);
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    width: inherit;
+    height: 100%;  
+    border-radius: 14px 14px 14px 14px;
+    overflow: hidden;
+    position: relative;
+   }
+   
+   .Widgets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 80%;
+   }
+   
+   .Wind-status {
+    box-sizing: border-box;
+    display: flex;
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 35%;
+    
+    background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+    border-radius: 45px;
+   }
+   
+   .Sun-position {
+    display: flex;
+    box-sizing: border-box;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 70%;
+    height: 35%;
+   
+    background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+    border-radius: 45px;
+   }
+   
+   .UV-index {
+    display: flex;
+    box-sizing: border-box;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 70%;
+    height: 35%;
+   
+    background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
+    border-radius: 45px;
+   }
+   
+   .App-link {
+    color: #61dafb;
+   }
 }
 
-.TodayLine {
- width: 90%;
- position: relative;
- margin-left: auto;
- margin-right: auto;
- height: 0px;
- 
- border: 1.5px solid rgba(255, 255, 255, 0.2);
-}
-.Todayimg {
- height: 40%;
- z-index: 100;
- position: relative;
- margin-left: auto;
- margin-right: 15px;
- margin-top: 10%;
-}
 
-.TodayTemp {
- position: absolute;
- object-fit: contain;
- display: flex;
- margin-left: 10px;
- margin-top: 25px;
-
- font-family: 'SF Pro Display';
- font-style: normal;
- font-weight: 500;
- font-size: 4vw;
- line-height: 5vw;
- /* identical to box height, or 68% */
- color: #FFFFFF;
-}
-.TodayFeelslike{  
- object-fit: contain;
- display: flex;
- margin-left: 10px;
- font-family: 'Circe';
- font-style: normal;
- font-weight: 350;
- font-size: 1vw;
- line-height: 1.5vw;
- /* identical to box height, or 125% */
- color: #FFFFFF;
-}
-.TodayWind {
- object-fit: contain;
- display: flex;
- margin-left: 10px;
- font-family: 'Circe';
- font-style: normal;
- font-weight: 350;
- font-size: 1vw;
- line-height: 1.5vw;
- /* identical to box height, or 125% */
-
- color: #FFFFFF;
-}
-.TodayPressure {
- object-fit: contain;
- display: flex;
- margin-left: 10px;  
- font-family: 'Circe';
- font-style: normal;
- font-weight: 350;
- font-size: 1vw  ;
- line-height: 1.5vw;
- /* identical to box height, or 125% */
- color: #FFFFFF;
-}
-.Day2 {
- display: flex;
- flex-direction: column;
- height: fit-content;
-
- width: 11%;
- height: 80%;
- left: auto;
- right: auto;
-
- background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
- border-radius: 30px;
-}
-
-.Day3 {
- display: flex;
- 
- flex-direction: column;
- height: fit-content;
-
- left: auto;
- right: auto;
- width: 11%;
- height: 80%;
-
-
- background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
- border-radius: 30px;
-}
-
-.Day4 {
- display: flex;
- flex-direction: column;
- height: fit-content;
- width: 11%;
- height: 80%;
-
- background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
- border-radius: 30px;
-}
-
-.Day5 {
- display: flex;
- flex-direction: column;
- height: fit-content;
-
- left: auto;
- right: auto;
- width: 11%;
- height: 80%;
-
- background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
- border-radius: 30px;
-}
-
-.Map {
- display: flex;
-
- width: 100%;
- height: 50%;
- border-radius: 45px;
- background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
-}
-
-.ymaps-layers-pane {
- filter: invert(100%);
- -ms-filter: invert(100%);
- -webkit-filter: invert(100%);
- -moz-filter: invert(100%);
- -o-filter: invert(100%);
- width: inherit;
- height: 100%;  
- border-radius: 14px 14px 14px 14px;
- overflow: hidden;
- position: relative;
-}
-
-.Widgets {
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- justify-content: flex-start;
-
- margin-left: auto;
- margin-right: auto;
- width: 25%;
- height: 80%;
-}
-
-.Wind-status {
- box-sizing: border-box;
- display: flex;
-
- margin-left: auto;
- margin-right: auto;
- width: 70%;
- height: 35%;
- 
- background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
- border-radius: 45px;
-}
-
-.Sun-position {
- display: flex;
- box-sizing: border-box;
-
- margin-left: auto;
- margin-right: auto;
- margin-top: 20px;
- width: 70%;
- height: 35%;
-
- background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
- border-radius: 45px;
-}
-
-.UV-index {
- display: flex;
- box-sizing: border-box;
-
- margin-left: auto;
- margin-right: auto;
- margin-top: 20px;
- width: 70%;
- height: 35%;
-
- background: linear-gradient(180deg, #1B1A1D 29.95%, #3B3A3E 150.81%);
- border-radius: 45px;
-}
-
-.App-link {
- color: #61dafb;
-}
